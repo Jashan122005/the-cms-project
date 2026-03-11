@@ -17,11 +17,13 @@ def create():
     title = request.form.get("title")
     author = request.form.get("author")
     body = request.form.get("body")
+    
 
     articles.append({
         "title": title,
         "author": author,
-        "body": body
+        "body": body,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Azure_Logo.svg"
     })
 
     return render_template("index.html", articles=articles)
@@ -35,3 +37,4 @@ def testlogs():
 
 if __name__ == "__main__":
     app.run()
+
