@@ -20,11 +20,11 @@ def create():
     
 
     articles.append({
-        "title": title,
-        "author": author,
-        "body": body,
-        "image": "https://learn.microsoft.com/en-us/azure/media/index/azure-logo.png"
-    })
+    "title": title,
+    "author": author,
+    "body": body,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.png"
+})
 
     return render_template("index.html", articles=articles)
 
@@ -37,5 +37,6 @@ def testlogs():
 
 if __name__ == "__main__":
     app.run()
+
 
 
