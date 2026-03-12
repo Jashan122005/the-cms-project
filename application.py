@@ -23,7 +23,7 @@ def create():
         "title": title,
         "author": author,
         "body": body,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Azure_Logo.svg"
+        "image": "https://learn.microsoft.com/en-us/azure/media/index/azure-logo.png"
     })
 
     return render_template("index.html", articles=articles)
@@ -37,4 +37,5 @@ def testlogs():
 
 if __name__ == "__main__":
     app.run()
+
 
